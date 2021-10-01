@@ -1,5 +1,6 @@
 # Handles pages and logo images
 from werkzeug import exceptions
+from werkzeug.security import safe_join
 
 from helpers import current_date_and_time, RepeatedElement, xml_node_name
 from models import Rooms, MiiData, RoomMenu, RoomMiis
@@ -123,7 +124,9 @@ if app.debug:
     @app.route("/url1/special/<page>/img/g1234.img")
     def handle_parade_banner(page):
         # Handles parade banner.
-        return send_from_directory(f"assets/special/{page}", "parade_banner.jpg")
+        return send_from_directory(
+            safe_join("assets/special", page), "parade_banner.jpg"
+        )
 
     @app.route("/url1/special/<page>/img/<img>")
     def handle_img(page, img):

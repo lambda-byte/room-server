@@ -2,6 +2,7 @@ import os
 
 from flask import render_template, redirect, url_for, send_from_directory
 from flask_login import login_required
+from werkzeug.security import safe_join
 
 from models import Rooms
 from room import db
@@ -96,17 +97,22 @@ def remove_room(room_id):
     return manage_delete_item(room_id, "room", drop_room)
 
 
-@app.route("/theunderground/rooms/<room_id>/banner.jpg")
+@app.route("/theunderground/rooms/<int:room_id>/parade_banner.jpg")
 @login_required
-def get_room_logo(room_id):
-    room = Rooms.query.filter_by(room_id=room_id).first()
-    asset_id = room.logo2_id
+def get_parade_banner(room_id):
+    return send_from_directory(
+        safe_join("assets/special", room_id), "parade_banner.jpg"
+    )
 
-    return send_from_directory("assets/special-" + room_id, f"{asset_id}.img")
+
+@app.route("/theunderground/rooms/<int:room_id>/room_banner.jpg")
+@login_required
+def get_room_banner(room_id: int):
+    return send_from_directory(get_room_dir(room_id), "room_banner.jpg")
 
 
 def get_room_dir(room_id: int) -> str:
-    path = f"./assets/special-{room_id}"
+    path = safe_join("assets/special", room_id)
 
     if not os.path.exists(path):
         os.mkdir(path)
