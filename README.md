@@ -6,7 +6,6 @@ A fork of room-server. made for the kicks and whatnot.
 
 ## Running
 
-#### Only do this in a dev environment. 
 
 1. Make a Debian vm.
 
@@ -43,7 +42,10 @@ Also WIP: Make a script that makes the database
 
 4. Read `conf/README.md` for instructions of static files you should provide.
 
-5. WIP.
+5. Finally, start the server:
+```
+flask run --host 0.0.0.0
+```
 
 6. You will now be able to visit The Underground (http://root_domain/theunderground). The default username is `admin`, and password `admin`.
 It's highly advised to change it as soon as possible.
