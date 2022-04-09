@@ -22,6 +22,7 @@ sudo usermod -a -G sudo User-name-here
 
 4. Login to the secondary user
 
+
 5. You need to run this script
 
 ```
