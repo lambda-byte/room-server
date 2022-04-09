@@ -12,6 +12,6 @@ print("starting server")
 try:
     subprocess.run(['flask run --host 0.0.0.0 --port 80'], check = True)
 except subprocess.CalledProcessError:
-    print ('Run failed. Try running with sudo')
+    print ('Run failed. Install flask.')
 
 # profit? 
