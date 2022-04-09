@@ -2,12 +2,19 @@
 
 # import things
 
-import subprocess
+import os, subprocess
 
 
 print("starting server")
 
-# for this command you have to use sudo. not a good idea but this is not prod anyways.
+
+# this is stupid but it works
+class NotSudo(Exception):
+    pass
+
+if os.getuid() != 0:
+    raise NotSudo("You need superuser perms to run this. Port 80 wont be allocated otherwise.")
+
 
 try:
     subprocess.run(['flask run --host 0.0.0.0 --port 80'], check = True)
