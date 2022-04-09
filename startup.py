@@ -4,6 +4,6 @@ import os
 
 
 print("starting server")
-os.system("flask run --host 0.0.0.0 --port 80")
+os.system("flask run --host 0.0.0.0")
 
 # profit? 
