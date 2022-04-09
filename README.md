@@ -2,6 +2,7 @@
 [![Build](https://github.com/WiiLink24/room-server/actions/workflows/push_docker_image.yml/badge.svg)](https://github.com/WiiLink24/room-server/actions/workflows/push_docker_image.yml)
 ## What is this?
 room-server provides a server usable with [Wii no Ma](https://en.wikipedia.org/wiki/Wii_no_Ma).
+lol
 
 ## Running
 1. You'll most likely want to [create a virtualenv](https://docs.python.org/3/library/venv.html) to install things. For example:
