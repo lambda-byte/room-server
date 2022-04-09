@@ -9,7 +9,7 @@ A fork of room-server. made for the kicks and whatnot.
 ```
 python3 -m venv virtualenv
 ```
-Ensure you active the environment.
+Ensure you activate the environment.
 
 2. Regardless of the above, ensure you have installed requirements:
 ```
