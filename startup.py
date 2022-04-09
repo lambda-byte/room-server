@@ -4,9 +4,9 @@ import os
 
 print("starting server")
 
-# for this command you have to use sudo. not a good idea but this is not prod anyways.
+# Terrible code that will only work on linux systems. Should be moved to subprocess asap 
 
-username=os.system("whoami")
+username=os.system("whoami > /dev/null")
 if username is not "root":
     print ("You aren't root. This script cant use port 80 otherwise.")
     exit()
