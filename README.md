@@ -2,7 +2,7 @@
 WIP: put a docker action image here at some point i guess.
 
 ## What is this?
-A fork of room-server. made for the kicks.
+A fork of room-server. made for the kicks and whatnot.
 
 ## Running
 1. You'll most likely want to [create a virtualenv](https://docs.python.org/3/library/venv.html) to install things. For example:
