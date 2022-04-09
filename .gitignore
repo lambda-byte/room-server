@@ -5,7 +5,6 @@ virtualenv
 venv
 
 !conf/README.md
-conf/
 config.py
 
 # Ensure .gitkeep is recognized
