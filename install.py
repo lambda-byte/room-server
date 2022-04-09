@@ -9,3 +9,4 @@
 import os, subprocess
 
 subprocess.run(["apt", "install", "postgresql", "postgresql-client", "libpq-dev", "python3-dev", "-y"])
+
