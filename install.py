@@ -10,3 +10,8 @@ import os, subprocess
 
 subprocess.run(["apt", "install", "postgresql", "postgresql-client", "libpq-dev", "python3-dev", "-y"])
 
+# make sql run
+subprocess.run(["systemctl", "enable", "postgresql"])
+
+subprocess.run(["systemctl", "start", "postgresql"])
+

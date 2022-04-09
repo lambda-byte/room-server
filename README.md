@@ -6,20 +6,28 @@ A fork of room-server. made for the kicks and whatnot.
 
 ## Running
 
-1. Make a debian vm.
+#### Only do this in a dev environment. 
+
+1. Make a Debian vm. This can be done with software like Virtualbox, VMware, or qemu. 
 
 2. Install this as root
 ```
 apt install vim sudo pip 
 ```
 
-3. You need to run this script
+3. Give your secondary user sudo perms.
+```
+sudo usermod -a -G sudo User-name-here
+```
+4. Login to the secondary user
+
+5. You need to run this script
 
 ```
 sudo python3 install.py
 ```
 
-4. Run this script to start
+6. Run this script to start
 ```
 sudo python3 startup.py
 ```
