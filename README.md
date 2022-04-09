@@ -4,7 +4,7 @@ WIP: put a docker action image here at some point i guess.
 ## What is this?
 A fork of room-server. made for the kicks and whatnot.
 
-## Running
+## Setup
 
 
 1. Make a Debian vm.
