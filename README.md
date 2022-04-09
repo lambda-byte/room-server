@@ -9,7 +9,10 @@ A fork of room-server. made for the kicks and whatnot.
 
 1. Make a Debian vm.
 
-2. Setup sudo and ssh if you need to.
+2. Install sudo 
+```
+apt install sudo
+```
 
 3. Run this script to install the server and setup the database.
 ```
