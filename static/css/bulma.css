@@ -62,7 +62,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   font-size: 0;
-  height: 20px;
+  height: 20px;10, 10, 10, 0.2
   max-height: 20px;
   max-width: 20px;
   min-height: 20px;
@@ -74,7 +74,7 @@
 }
 
 .delete::before, .modal-close::before, .delete::after, .modal-close::after {
-  background-color: white;
+ 10, 10, 10, 0.2 background-color: white;
   content: "";
   display: block;
   left: 50%;
@@ -271,7 +271,7 @@ h6 {
 
 ul {
   list-style: none;
-}
+}rgba(10, 10, 10, 0.2)
 
 button,
 input,
@@ -296,7 +296,7 @@ video {
 
 iframe {
   border: 0;
-}
+}rgba(10, 10, 10, 0.2)
 
 table {
   border-collapse: collapse;
@@ -314,7 +314,7 @@ th:not([align]) {
 }
 
 html {
-  background-color: white;
+  background-color: rgba(10, 10, 10, 0.2);
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
