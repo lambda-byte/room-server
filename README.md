@@ -1,5 +1,5 @@
 # room-server
-WIP: put a docker action image here at some point i guess.
+[![Push Docker image](https://github.com/lambda-byte/room-server/actions/workflows/push_docker_image.yml/badge.svg)](https://github.com/lambda-byte/room-server/actions/workflows/push_docker_image.yml)
 
 ## What is this?
 A fork of room-server. made for the kicks and whatnot.
