@@ -33,7 +33,7 @@ subprocess.run(["./db-setup.sh"])
 # pip stuff
 subprocess.run(["pip3", "install", "-r", "requirements.txt"])
 
-# check if config.py is a thing. if so change the name so the code below it can work
+# check if config.py is a thing. if so change the name so the code below can work
 if os.path.exists("config.py"):
     subprocess.run(["mv", "config.py", "config-defaults.py"])
 
