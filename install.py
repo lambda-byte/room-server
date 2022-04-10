@@ -21,7 +21,7 @@ else:
 
 
 # install cool things
-subprocess.run(["apt", "install", "postgresql", "postgresql-client", "libpq-dev", "python3-dev", "pip" "-y"])
+subprocess.run(["apt", "install", "postgresql", "postgresql-client", "libpq-dev", "python3-dev", "pip", "-y"])
 
 # make sql run
 subprocess.run(["systemctl", "enable", "postgresql"])
