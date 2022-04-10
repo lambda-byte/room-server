@@ -41,7 +41,6 @@ pip3 install python-dotenv
 
 3. You'll then need to install PostgreSQL. Copy `config-example.py` to `config.py` and update this config.
 
-Also WIP: Make a script that makes the database
 
 4. Read `conf/README.md` for instructions of static files you should provide.
 
