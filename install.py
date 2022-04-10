@@ -8,7 +8,7 @@
 # imports
 import subprocess, time, os
 
-print("This is the dev install script. Dont use this in a production environment.")    
+print("This is a dev install script. Dont use this in a production environment.")    
 time.sleep(1)
 
 # sanity check
