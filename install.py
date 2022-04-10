@@ -9,13 +9,13 @@
 import subprocess, time, os
 
 print("This is the dev install script. Dont use this in a production environment.")    
-time.sleep(2)
+time.sleep(1)
 
 # sanity check
-ask = input('Warning.\n This installer will overwrite any existing room-server database files. Would you like to proceed?\n: ')
+ask = input('Warning. This installer will overwrite any existing room-server database files. Would you like to proceed?\n: ')
 if ask in ["yes", "Yes", "Y", "y"]:
     print("Ok. Starting install")
-    time.sleep(2)
+    time.sleep(1)
 else:
   quit()
 
