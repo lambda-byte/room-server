@@ -37,15 +37,15 @@ subprocess.run(["pip3", "install", "-r", "requirements.txt"])
 if os.path.exists("config.py"):
     subprocess.run(["mv", "config.py", "config-defaults.py"])
 
-
+# prompt user for root domain info
 domain = input("Enter the root domain you want in quotes: ")
-
+# take input and make it something that config.py can read
 string = "\nroot_domain = {}".format(domain)
-
+# write it
 with open("config-defaults.py", "a") as f:
     f.write(string)
 
-
+# turn config-defaults to config
 subprocess.run(["mv", "config-defaults.py", "config.py"])
-
+# profit?
 print("Install Done! Now just run startup.py")
